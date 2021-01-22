@@ -8,3 +8,5 @@
 2. Menerapkan Framework Kedalam Project
       - Menggunakan Framework Bootsrap
       - Menggunakan Framework Codeigniter
+
+3. Mengonlinekan Hasil Project
