@@ -1,0 +1,8 @@
+1. Pengenalan Bahasa Pemrograman
+    - PHP
+      - Variabel
+      - Fungsi
+      - Praktek Project
+      - Menggunakan Framework Bootsrap
+      - Menggunakan Framework Codeigniter
+      
