@@ -6,3 +6,4 @@
       - Menggunakan Framework Bootsrap
       - Menggunakan Framework Codeigniter
       
+2. Menerapkan Framework Kedalam Project
