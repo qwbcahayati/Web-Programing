@@ -1,0 +1,119 @@
+<html>
+	<head>
+		<title>Kasir
+		</title>
+		<link rel="stylesheet" type="text/css" href="last.css">
+	</head>
+	<body>
+		<div class="bg"></div>
+		<div class="wrap">
+			<div class="header">			
+				<h1>LAPTOP DUN EDITION</h1>
+			</div>
+			</body>
+			<div class="menu">
+			</div>
+ <style>
+
+  .tengah{
+            background-image:url(  keren-hd-texture-wallpapers-wood-background-kayu-keren-hd-wallpapers-for-free-download-doodle-background-kayu-keren-hd-wallpapers-wallpaper.jpg);
+            background-position:center;
+            width:auto;
+            height:auto;
+         
+        }
+  
+
+  table{
+   background: Lavender;
+   margin:auto;
+
+  }
+
+  
+ </style>
+</head>
+<body class="tengah">
+ <div>
+  
+  <table border="1">
+   <h2 align="center" style="background: RosyBrown">Keuangan Laptop Dun Edition</h2>
+   <tr>    
+    <th>Nama</th>
+    <th><select id="nama" onchange="total()" >
+    	<option>Acer Chromebook 514</option>
+    	<option>Toshiba Portege X20W</option>
+    	<option>HP 15-bw071ax</option>
+    	<option>ASUS VivoBook A442UQ</option>
+    	<option>Lenovo IdeaPad 320</option>
+      <option>Dell Inspiron 3567</option>
+      <option>Xiaomi Mi Notebook Air</option>
+      <option>ASUS X550IU</option>
+    </select></th>
+   </tr>
+   
+   <tr>    
+    <th>Harga</th>
+    <th><input type="number"  id="harga" onchange="total()"></th>
+   </tr>
+
+   <tr>    
+    <th>Jumlah Beli</th>    
+    <th><input type="number" id="jumlah"  value="0" onchange="total()"></th>
+   </tr>
+   
+   <tr>    
+    <th>jumlah total</th>
+    <th><input type="text" style="background: white" id="total" disabled></th>
+   </tr>
+
+   <tr>    
+    <th>Pembayaran</th>    
+    <th><input type="number" id="bayar" onchange="total()"></th>
+   </tr>
+   
+   <tr>    
+    <th>Kembalian</th>
+    <th><input type="text" style="background: white" id="total1" disabled></th>
+   </tr>
+         
+            <tr>
+                <th><input type="button" style="background: white"  onclick="window.print()" value="CETAK"></th>
+            </tr>
+   
+   <tr>   
+    <table width="300" height="201px" border="8">
+    <th><label align="landscape"  id="cetak" ></label></th>
+    </table>
+   </tr>         
+   
+  </table>
+        <marquee scrolldelay="100" direction="left" bgcolor="RosyBrown"> > TERIMA KASIH TELAH MEMPERCAYAI KAMI< </marquee>
+  
+  
+  <script type="text/javascript">
+  
+  function total() {
+   var nama = document.getElementById('nama').value;
+   var harga =  parseInt(document.getElementById('harga').value);
+   var jumlah_beli =  parseInt(document.getElementById('jumlah').value);
+   var pembayaran =  parseInt(document.getElementById('bayar').value);
+   var jumlah_harga = harga * jumlah_beli;
+    document.getElementById('total').value = jumlah_harga;
+
+   var kembali = pembayaran - jumlah_harga;
+    document.getElementById('total1').value = kembali;
+  
+   var cetak = "Nama    : "+nama+"</br>"+
+                      "Harga   : "+harga+"</br>"+
+                      "Jumlah_beli  : "+jumlah_beli+"</br>"+
+                      "Jumlah_total  : "+jumlah_harga+"</br>"+
+                      "pembayaran  : "+pembayaran+"</br>"+
+                      "Kembalian  : "+kembali;
+    document.getElementById("cetak").innerHTML=cetak;
+  }
+  
+  </script>
+ </div>
+</body>
+</html>
